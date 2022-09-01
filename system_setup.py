@@ -37,7 +37,7 @@ class SystemSetup(object):
 			'6. Submit any issues on Github(http://bit.ly/XoqtcH).\n'
 			'###############################################################\n')
 
-		raw_input()
+		input()
 
 	def install_alien(self):
 		subprocess.check_call(["apt-get", "-y", "install", "alien"])
@@ -93,4 +93,4 @@ class SystemSetup(object):
 if __name__ == '__main__':
 	setup = SystemSetup()
 	setup.oracle_setup()
-	print setup.program_completion_message
+	print(setup.program_completion_message)
